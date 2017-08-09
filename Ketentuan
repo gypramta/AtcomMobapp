@@ -1,0 +1,30 @@
+Pemberitahuan !!! (Baca dahulu)
+__________________
+Modul GSM Trainer : Aplikasi Syntax AT Command
+>>> AT Command Mobile App vBeta <<<
+
+1.  Syntax AT Command berdasarkan Operation Manual Ver. 1.0 GSM Trainer ST2133
+
+2.  AT Command Mobile App masih dalam kondisi Beta Version
+
+3.  Untuk mengaktifkan halaman utama AT Command diperlukan kondisi "Root" pada smartphone yang di gunakan
+
+4.  Memerlukan hardware yang memadai untuk mengakses AT Serial Device (/dev) pada android, diantaranya :
+      Smartphone prosesor Qualcomm  : /dev/smd[0,7]
+      Smartphone prosesor Mediatek  : /dev/radio/atci[0-9]
+
+5.  Terdapat 9 syntax AT Command yang masih belum sempurna penggunaannya, diantaranya :
+      2 syntax kegagalan fatal 
+        :  atq1 (Force Close)
+        :  atv0 (Force Close)
+      7 syntax dapat menghasilkan respon setelah mengganti Serial Device (/dev), namun harus reboot smartphone setelah itu
+        : at+cgmi  (Reboot Smartphone)
+        : at+cgmm  (Reboot Smartphone)
+        : at+cgmr  (Reboot Smartphone)
+        : at+cgsn  (Reboot Smartphone)
+        : ata      (Reboot Smartphone)
+        : at+cmgd=?(Reboot Smartphone)
+        : at+cscb? (Reboot Smartphone)
+        
+6.  Akses ke "DB ATCom" dan "DB Respon" hanya diperbolehkan setelah menyelesaikan semua pengujian syntax AT Command
+    Jika tidak Aplikasi akan mengalami kegagalan akses pengujian syntax, dan smartphone harus di "Reboot"
